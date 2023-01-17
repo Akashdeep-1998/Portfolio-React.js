@@ -3,7 +3,8 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-// bg-[#060f1d]
+
+// bg-[#060f1d] 682x384
 const App = () => {
   return (
     <div>
