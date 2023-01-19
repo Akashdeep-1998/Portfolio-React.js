@@ -14,7 +14,7 @@ const About = () => {
             <p className="text-4xl font-bold text-gray-300 ">
               Hi. I'm Akash, nice to meet you. Please take a look around!
             </p>
-            <p className="text-gray-400">
+            <p className="text-gray-400 lg:max-w-lg">
               I am passionate about building & designing web applications to
               solve the real world problems. These things always motivate me to
               work and enhance my skills. I also keen to learn and update myself

@@ -3,8 +3,19 @@
 @tailwind base;
 
 html {
-font-family: 'Raleway', sans-serif;}
+    font-family: 'Raleway', sans-serif;
+}
 
+.active {
+    border-bottom: 2px solid #ebae13;
+    font-weight: bold;
+}
+
+.content-div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @tailwind components;
 @tailwind utilities;
