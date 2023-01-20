@@ -1,7 +1,5 @@
 import React from "react";
 import { FiCornerRightDown } from "react-icons/fi";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { BsArrowRight } from "react-icons/bs";
 
 const Contact = () => {
   return (
