@@ -83,7 +83,7 @@ const Skills = () => {
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-4xl sm:text-6xl font-bold inline border-b-4 border-[#ebae13]">
+          <p className="text-4xl md:text-5xl font-bold inline border-b-4 border-[#ebae13]">
             Skills
           </p>
           <p className="text-gray-400 py-4 flex gap-2 items-center">
@@ -94,13 +94,13 @@ const Skills = () => {
             />
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-6">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 text-center py-6">
           {skills.map(({ id, technology, shadow, skill }) => (
             <div
               key={id}
               className={`shadow-md ${shadow} hover:scale-110 duration-500 rounded-md`}
             >
-              <img className="w-20 mx-auto" src={technology} alt={skill} />
+              <img className="w-16 mx-auto" src={technology} alt={skill} />
               <p className="my-4">{skill.toUpperCase()}</p>
             </div>
           ))}

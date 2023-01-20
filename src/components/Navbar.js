@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import logo from "../assets/codingLogo.png";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaLinkedin,
+  FaDownload,
+} from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
@@ -8,10 +14,10 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [hamburger, setHamburger] = useState(true);
   return (
-    <div className="flex justify-between items-center w-full fixed bg-[#060f1d] px-4 h-[4.5rem]">
+    <div className="shadow-md shadow-[#000000d3] md:shadow-[#080d16d3] flex justify-between items-center w-full fixed bg-[#06101f] md:bg-[#091426] px-4 h-[4.5rem]">
       <div>
         <Link to="home" smooth>
-          <img src={logo} alt="avatar" className="h-16 cursor-pointer" />
+          <img src={logo} alt="avatar" className="h-14 cursor-pointer" />
         </Link>
       </div>
       <ul className=" hidden md:flex gap-6">
@@ -20,7 +26,8 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          className="cursor-pointer capitalize text-md text-gray-200 hover:scale-110 duration-100"
+          duration={2000}
+          className="cursor-pointer capitalize text-lg text-gray-200 hover:scale-110 duration-100"
         >
           home
         </Link>
@@ -29,7 +36,8 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          className="cursor-pointer capitalize text-md text-gray-200 hover:scale-110 duration-100"
+          duration={2000}
+          className="cursor-pointer capitalize text-lg text-gray-200 hover:scale-110 duration-100"
         >
           about
         </Link>
@@ -38,7 +46,8 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          className="cursor-pointer capitalize text-md text-gray-200 hover:scale-110 duration-100"
+          duration={2000}
+          className="cursor-pointer capitalize text-lg text-gray-200 hover:scale-110 duration-100"
         >
           experience
         </Link>
@@ -47,7 +56,8 @@ const Navbar = () => {
           spy={true}
           to="skills"
           smooth={true}
-          className="cursor-pointer capitalize text-md text-gray-200 hover:scale-110 duration-100"
+          duration={2000}
+          className="cursor-pointer capitalize text-lg text-gray-200 hover:scale-110 duration-100"
         >
           skills
         </Link>
@@ -56,7 +66,8 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          className="cursor-pointer capitalize text-md text-gray-200 hover:scale-110 duration-100"
+          duration={2000}
+          className="cursor-pointer capitalize text-lg text-gray-200 hover:scale-110 duration-100"
         >
           projects
         </Link>
@@ -65,7 +76,8 @@ const Navbar = () => {
           activeClass={"active"}
           spy={true}
           smooth={true}
-          className="cursor-pointer capitalize text-md text-gray-200 hover:scale-110 duration-100"
+          duration={2000}
+          className="cursor-pointer capitalize text-lg text-gray-200 hover:scale-110 duration-100"
         >
           contact
         </Link>
@@ -81,13 +93,14 @@ const Navbar = () => {
         className={
           hamburger
             ? "hidden"
-            : "absolute top-0 right-0 w-3/4 h-screen bg-[#ebae13] flex flex-col justify-center items-center gap-10"
+            : "absolute top-0 right-0 w-3/4 h-screen text-xl bg-[#0c1a30] flex flex-col justify-center items-center gap-6"
         }
       >
         <Link
           to="home"
           smooth={true}
-          className="cursor-pointer capitalize text-2xl text-white hover:scale-125 duration-100"
+          duration={2000}
+          className="cursor-pointer capitalize text-white hover:scale-125 duration-100"
           onClick={() => setHamburger(!hamburger)}
         >
           home
@@ -95,7 +108,8 @@ const Navbar = () => {
         <Link
           to="about"
           smooth={true}
-          className="cursor-pointer capitalize text-2xl text-white hover:scale-125 duration-100"
+          duration={2000}
+          className="cursor-pointer capitalize text-white hover:scale-125 duration-100"
           onClick={() => setHamburger(!hamburger)}
         >
           about
@@ -104,7 +118,8 @@ const Navbar = () => {
           to="experience"
           smooth={true}
           offset={-20}
-          className="cursor-pointer capitalize text-2xl text-white hover:scale-125 duration-100"
+          duration={2000}
+          className="cursor-pointer capitalize text-white hover:scale-125 duration-100"
           onClick={() => setHamburger(!hamburger)}
         >
           experience
@@ -113,7 +128,8 @@ const Navbar = () => {
           to="skills"
           smooth={true}
           offset={-80}
-          className="cursor-pointer capitalize text-2xl text-white hover:scale-125 duration-100"
+          duration={2000}
+          className="cursor-pointer capitalize text-white hover:scale-125 duration-100"
           onClick={() => setHamburger(!hamburger)}
         >
           skills
@@ -122,7 +138,8 @@ const Navbar = () => {
           to="projects"
           smooth={true}
           offset={-80}
-          className="cursor-pointer capitalize text-2xl text-white hover:scale-125 duration-100"
+          duration={2000}
+          className="cursor-pointer capitalize text-white hover:scale-125 duration-100"
           onClick={() => setHamburger(!hamburger)}
         >
           projects
@@ -131,32 +148,87 @@ const Navbar = () => {
           to="contact"
           offset={200}
           smooth={true}
-          className="cursor-pointer capitalize text-2xl text-white hover:scale-125 duration-100"
+          duration={2000}
+          className="abcd cursor-pointer capitalize text-white hover:scale-125 duration-100"
           onClick={() => setHamburger(!hamburger)}
         >
           contact
         </Link>
+        <a
+          href="https://www.linkedin.com/in/akashdeep-1998/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer capitalize text-white hover:scale-125 duration-100"
+          onClick={() => setHamburger(!hamburger)}
+        >
+          <span className="flex gap-2 justify-center items-center">
+            Linkedin <FaLinkedin size={22} />
+          </span>
+        </a>
+
+        <a
+          href="https://github.com/Akashdeep-1998"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer capitalize text-white hover:scale-125 duration-100"
+          onClick={() => setHamburger(!hamburger)}
+        >
+          <span className="flex gap-4 justify-center items-center">
+            Github <FaGithub size={22} />
+          </span>
+        </a>
+
+        <a
+          href="https://drive.google.com/u/0/uc?id=1yNghzvCpzPftt7fNW20WVMDeQRdtS8Xd&export=download"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer capitalize text-white hover:scale-125 duration-100"
+          onClick={() => setHamburger(!hamburger)}
+        >
+          <span className="flex gap-2 font-bold justify-center items-center">
+            Resume <FaDownload size={20} className="animate-bounce" />
+          </span>
+        </a>
       </ul>
       <div className="hidden text-gray-200 fixed lg:flex flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-0 duration-300 bg-[#0A66C2]">
-            <a href="/" className="w-full flex justify-around items-center">
+            <a
+              href="https://www.linkedin.com/in/akashdeep-1998/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex justify-around items-center"
+            >
               Linkedin
               <FaLinkedin size={30} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-0 duration-300 bg-[#171515]">
-            <a href="/" className="w-full flex justify-around items-center">
+            <a
+              href="https://github.com/Akashdeep-1998"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex justify-around items-center"
+            >
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-0 duration-300 bg-[#EA4335]">
-            <a href="/" className="w-full flex justify-around items-center">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-0 duration-300 bg-[#EA4335] cursor-pointer">
+            <Link
+              to="contact"
+              smooth={true}
+              className="w-full flex justify-around items-center"
+            >
               E - mail <HiOutlineMail size={30} />
-            </a>
+            </Link>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-0 duration-300 bg-[#5A8F7B]">
-            <a href="/" className="w-full flex justify-around items-center">
+            <a
+              href="https://drive.google.com/u/0/uc?id=1yNghzvCpzPftt7fNW20WVMDeQRdtS8Xd&export=download"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex justify-around items-center"
+            >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
           </li>

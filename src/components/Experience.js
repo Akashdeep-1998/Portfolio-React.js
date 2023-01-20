@@ -22,7 +22,7 @@ const experiences = [
     role: "Bachelor of Technology - CSE",
     company: "Lovely Professional University",
     duration: "Aug'17 - Aug'21",
-    work: "Completed graduation in Computer Science and secured 7.5/10 CGPA.",
+    work: "Completed graduation in Computer Science and learnt tech stacks like Programming languages, Data Structures & Algorithms, DBMS, Operating System, Computer Networks, Web Development etc.",
   },
 ];
 
@@ -31,7 +31,7 @@ const Experience = () => {
     <div name="experience" className="w-full h-screen bg-[#060f1d]">
       <div className="max-w-[1000px] flex flex-col h-full w-full justify-center mx-auto p-4">
         <div className="mb-10">
-          <p className="inline text-4xl sm:text-6xl font-bold text-gray-300 border-b-4 border-[#ebae13]">
+          <p className="inline text-4xl md:text-5xl font-bold text-gray-300 border-b-4 border-[#ebae13]">
             Experience
           </p>
         </div>
@@ -42,7 +42,7 @@ const Experience = () => {
               className="flex flex-col sm:flex-row sm:justify-between"
             >
               <div className="flex gap-4">
-                <p className="text-[#ebae13] animate-pulse">
+                <p className="text-[#ebae13]">
                   {id === 3 ? (
                     <FaUserGraduate size={23} />
                   ) : (

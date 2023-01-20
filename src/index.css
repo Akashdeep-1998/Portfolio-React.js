@@ -6,6 +6,10 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    animation: colorChange 5s infinite;
+}
+
 .active {
     border-bottom: 2px solid #ebae13;
     font-weight: bold;
@@ -16,6 +20,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 @tailwind components;
 @tailwind utilities;

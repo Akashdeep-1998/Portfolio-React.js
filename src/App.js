@@ -7,7 +7,6 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
-// bg-[#060f1d] 682x384
 const App = () => {
   return (
     <div>
@@ -17,7 +16,7 @@ const App = () => {
       <Experience />
       <Skills />
       <Projects />
-      <Contact/>
+      <Contact />
     </div>
   );
 };

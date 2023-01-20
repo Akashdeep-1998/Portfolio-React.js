@@ -66,7 +66,7 @@ const Projects = () => {
     >
       <div className="max-w-screen-lg h-full mx-auto flex flex-col justify-center p-4">
         <div>
-          <p className="inline text-4xl sm:text-6xl font-bold border-b-4 border-[#ebae13]">
+          <p className="inline text-4xl md:text-5xl font-bold border-b-4 border-[#ebae13]">
             Projects
           </p>
           <p className="py-6 flex gap-2 items-center text-gray-400">
@@ -82,7 +82,7 @@ const Projects = () => {
             <div
               key={id}
               style={{ backgroundImage: `url(${img})` }}
-              className="h-[240px] rounded-md overflow-hidden content-div group shadow-md shadow-[#020202]"
+              className="h-[244px] sm:h-[176px] rounded-md overflow-hidden content-div group shadow-md shadow-[#020202]"
             >
               <div className="h-full flex flex-col items-center justify-evenly opacity-0 group-hover:opacity-100 bg-[#ebae13] md:duration-200">
                 <span className="flex flex-col items-center">
