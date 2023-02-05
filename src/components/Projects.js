@@ -5,11 +5,19 @@ import ticTacToe from "../assets/projects/tictactoe.png";
 import newsApp from "../assets/projects/newsApp.png";
 import textUtils from "../assets/projects/textUtils.png";
 import foodApp from "../assets/projects/foodApp.png";
-import pigGame from "../assets/projects/pigGame.png";
+import netflixApp from '../assets/projects/NetflixApp.png'
 
 const projects = [
   {
     id: 1,
+    img: netflixApp,
+    demo: "https://netflix-clone555.netlify.app/",
+    app: "Netflix Clone App",
+    techUsed: "React, Firebase, Tailwind CSS",
+    github: "https://github.com/Akashdeep-1998/Netflix-Clone",
+  },
+  {
+    id: 2,
     img: chatApp,
     demo: "https://talkr-chat.netlify.app",
     app: "Chat Application",
@@ -17,7 +25,7 @@ const projects = [
     github: "https://github.com/Akashdeep-1998/Talkr-chat-app-Frontend",
   },
   {
-    id: 2,
+    id: 3,
     img: ticTacToe,
     demo: "https://nought-and-cross.netlify.app/",
     app: "Tic Tac Toe Game",
@@ -25,7 +33,7 @@ const projects = [
     github: "https://github.com/Akashdeep-1998/tic-tac-toe",
   },
   {
-    id: 3,
+    id: 4,
     img: newsApp,
     demo: "https://news25.netlify.app/",
     app: "News Application",
@@ -33,7 +41,7 @@ const projects = [
     github: "https://github.com/Akashdeep-1998/React-News25",
   },
   {
-    id: 4,
+    id: 5,
     img: textUtils,
     demo: "https://mytextutilityapp.netlify.app/",
     app: "Text Utility Application",
@@ -41,20 +49,12 @@ const projects = [
     github: "https://github.com/Akashdeep-1998/My-TextUtils-App",
   },
   {
-    id: 5,
+    id: 6,
     img: foodApp,
     demo: "https://akashdeep-1998.github.io/BreadAndButter/",
     app: "Food Ordering Website",
     techUsed: "HTML, CSS, Javascript",
     github: "https://github.com/Akashdeep-1998/BreadAndButter",
-  },
-  {
-    id: 6,
-    img: pigGame,
-    demo: "https://akashdeep-1998.github.io/dicegame/",
-    app: "Pig Game",
-    techUsed: "HTML, CSS, Javascript",
-    github: "https://github.com/Akashdeep-1998/dicegame",
   },
 ];
 

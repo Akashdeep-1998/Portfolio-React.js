@@ -179,7 +179,7 @@ const Navbar = () => {
         </a>
 
         <a
-          href="https://drive.google.com/u/0/uc?id=1yNghzvCpzPftt7fNW20WVMDeQRdtS8Xd&export=download"
+          href="https://drive.google.com/file/d/10zXgaJb4jrqXdi4Wr2wnohqhsdU3bvzJ/view?usp=share_link"
           target="_blank"
           rel="noopener noreferrer"
           className="cursor-pointer capitalize text-white hover:scale-125 duration-100"
@@ -224,7 +224,7 @@ const Navbar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-0 duration-300 bg-[#5A8F7B]">
             <a
-              href="https://drive.google.com/u/0/uc?id=1yNghzvCpzPftt7fNW20WVMDeQRdtS8Xd&export=download"
+              href="https://drive.google.com/file/d/10zXgaJb4jrqXdi4Wr2wnohqhsdU3bvzJ/view?usp=share_link"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex justify-around items-center"
